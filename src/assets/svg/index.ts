@@ -1,0 +1,6 @@
+export { default as SearchIcon } from "./SearchIcon"
+export { default as TicketIcon } from "./TicketIcon"
+export { default as ProfileIcon } from "./ProfileIcon"
+export { default as BusIcon } from "./BusIcon"
+export { default as ContactIcon } from "./ContactIcon"
+export { default as LogoIcon } from "./LogoIcon"
