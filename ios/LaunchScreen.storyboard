@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
+    <device id="retina6_72" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="EHf-IW-A2E">
+            <objects>
+                <viewController id="01J-lp-oVM" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="MID-AC-hlP"/>
+                        <viewControllerLayoutGuide type="bottom" id="kiX-JZ-VbD"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="center" id="7mQ-2C-u73">
+                        <rect key="frame" x="0.0" y="0.0" width="430" height="932"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" image="splash" translatesAutoresizingMaskIntoConstraints="NO" id="ljT-ic-enC">
+                                <rect key="frame" x="0.0" y="59" width="430" height="873"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.83056467769999998" green="0.2208747268" blue="0.19994342330000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <color key="tintColor" red="0.83056467769999998" green="0.2208747268" blue="0.19994342330000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="ljT-ic-enC" firstAttribute="leading" secondItem="7mQ-2C-u73" secondAttribute="leading" id="1QZ-oz-eiy"/>
+                            <constraint firstAttribute="trailing" secondItem="ljT-ic-enC" secondAttribute="trailing" id="4Ws-52-1Py"/>
+                            <constraint firstItem="ljT-ic-enC" firstAttribute="leading" secondItem="7mQ-2C-u73" secondAttribute="leading" id="7dK-4c-6eE"/>
+                            <constraint firstAttribute="bottom" secondItem="ljT-ic-enC" secondAttribute="bottom" id="7uA-SU-Z2u"/>
+                            <constraint firstItem="ljT-ic-enC" firstAttribute="top" secondItem="7mQ-2C-u73" secondAttribute="top" id="EjH-XR-RaQ"/>
+                            <constraint firstItem="ljT-ic-enC" firstAttribute="top" secondItem="MID-AC-hlP" secondAttribute="bottom" id="Fun-9X-oq5"/>
+                            <constraint firstAttribute="trailing" secondItem="ljT-ic-enC" secondAttribute="trailing" id="U0C-zn-JDb"/>
+                            <constraint firstAttribute="bottom" secondItem="ljT-ic-enC" secondAttribute="bottom" id="cXD-n8-xFq"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="43.255813953488371" y="370.81545064377684"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="splash" width="131" height="284"/>
+    </resources>
+</document>

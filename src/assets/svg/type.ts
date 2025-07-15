@@ -1,4 +1,5 @@
 export interface SvgComponentProps {
   color?: string
-  size?: number
+  width?: number
+  height?: number
 }

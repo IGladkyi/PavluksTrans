@@ -1,23 +1,24 @@
 import React from "react"
 import { createBottomTabNavigator } from "@react-navigation/bottom-tabs"
-import { View, StyleSheet } from "react-native"
-import { fontFamilies } from "@/styles/theme"
-import SearchScreen from "@/screens/SearchScreen"
-import ProfileScreen from "@/screens/ProfileScreen"
-import TicketsScreen from "@/screens/TicketsScreen"
-import colors from "@/styles/colors"
+import { View, StyleSheet, Text } from "react-native"
+import { fontFamilies } from "@styles/theme"
+import SearchScreen from "@screens/SearchScreen"
+import ProfileScreen from "@screens/ProfileScreen"
+import TicketsScreen from "@screens/TicketsScreen"
+import colors from "@styles/colors"
 import {
   BusIcon,
   ContactIcon,
   ProfileIcon,
   SearchIcon,
   TicketIcon,
-} from "@/assets/svg"
+} from "@assets/svg"
 import { ScreensEnum } from "../constants/ScreensEnum"
 import { moderateScale } from "react-native-size-matters"
-import { isIOS } from "@/utils/platformChecker"
-import MyBusScreen from "@/screens/MyBusScreen"
-import ContactsScreen from "@/screens/ContactsScreen"
+import { isIOS } from "@utils/platformChecker"
+import MyBusScreen from "@screens/MyBusScreen"
+import ContactsScreen from "@screens/ContactsScreen"
+import { useTranslation } from "react-i18next"
 
 export type MainTabParamList = {
   Search: undefined
@@ -29,7 +30,6 @@ export type MainTabParamList = {
 
 const Tab = createBottomTabNavigator<MainTabParamList>()
 
-// Custom Tab Icon Component
 const TabIcon = ({
   focused,
   color,
@@ -42,15 +42,45 @@ const TabIcon = ({
   const getIcon = () => {
     switch (iconName) {
       case ScreensEnum.SEARCH:
-        return <SearchIcon color={color} />
+        return (
+          <SearchIcon
+            color={color}
+            width={moderateScale(21)}
+            height={moderateScale(21)}
+          />
+        )
       case ScreensEnum.TICKETS:
-        return <TicketIcon color={color} />
+        return (
+          <TicketIcon
+            color={color}
+            width={moderateScale(24)}
+            height={moderateScale(24)}
+          />
+        )
       case ScreensEnum.PROFILE:
-        return <ProfileIcon color={color} />
+        return (
+          <ProfileIcon
+            color={color}
+            width={moderateScale(20)}
+            height={moderateScale(20)}
+          />
+        )
       case ScreensEnum.CONTACTS:
-        return <ContactIcon color={color} />
+        return (
+          <ContactIcon
+            color={color}
+            width={moderateScale(20)}
+            height={moderateScale(20)}
+          />
+        )
       case ScreensEnum.BUS:
-        return <BusIcon color={color} />
+        return (
+          <BusIcon
+            color={color}
+            width={moderateScale(17)}
+            height={moderateScale(20)}
+          />
+        )
     }
   }
 
@@ -64,6 +94,7 @@ const TabIcon = ({
 }
 
 const MainTabNavigator = () => {
+  const { t } = useTranslation()
   return (
     <Tab.Navigator
       initialRouteName={ScreensEnum.SEARCH}
@@ -75,6 +106,13 @@ const MainTabNavigator = () => {
               color={focused ? colors.mainRed : colors.darkGray}
               iconName={route.name}
             />
+          ),
+          tabBarLabel: ({ focused }) => (
+            <Text
+              style={[styles.tabBarLabel, focused && styles.tabBarLabelFocused]}
+            >
+              {t(route.name)}
+            </Text>
           ),
           tabBarLabelStyle: styles.tabBarLabel,
           tabBarStyle: styles.tabBar,
@@ -116,16 +154,22 @@ const styles = StyleSheet.create({
     ...fontFamilies.interSemiBold11,
     textAlign: "center",
     marginTop: moderateScale(4),
+    color: colors.darkGray,
   },
   iconContainer: {
-    width: moderateScale(26),
+    width: moderateScale(24),
     height: moderateScale(24),
+    justifyContent: "center",
+    alignItems: "center",
   },
   iconContainerFocused: {
     transform: [{ scale: 1.1 }],
   },
   iconText: {
     textAlign: "center",
+  },
+  tabBarLabelFocused: {
+    color: colors.mainRed,
   },
 })
 

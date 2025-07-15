@@ -1,8 +1,9 @@
-import React from "react"
+import React, { useEffect } from "react"
 import { NavigationContainer } from "@react-navigation/native"
 import { createStackNavigator } from "@react-navigation/stack"
 import MainTabNavigator from "./MainTabNavigator"
 import { ScreensEnum } from "../constants/ScreensEnum"
+// import SplashScreen from "react-native-splash-screen"
 
 export type RootStackParamList = {
   Main: undefined
@@ -11,6 +12,10 @@ export type RootStackParamList = {
 const Stack = createStackNavigator<RootStackParamList>()
 
 const AppNavigator = () => {
+  // useEffect(() => {
+  //   SplashScreen.hide()
+  // }, [])
+
   return (
     <NavigationContainer>
       <Stack.Navigator

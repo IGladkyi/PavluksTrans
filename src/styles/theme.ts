@@ -1,54 +1,59 @@
 import { StyleSheet } from "react-native"
 import { moderateScale } from "react-native-size-matters"
 import { screenWidth } from "../utils/screenResponsive"
-import fonts from "./fonts"
+import fonts from "../assets/fonts"
 
 export const fontFamilies = StyleSheet.create({
+  interRegular10: {
+    fontFamily: fonts.InterRegular,
+    fontSize: moderateScale(10),
+    lineHeight: moderateScale(14),
+  },
   interRegular12: {
-    fontFamily: fonts.ManropeRegular,
+    fontFamily: fonts.InterRegular,
     fontSize: moderateScale(12),
     lineHeight: moderateScale(18),
   },
   interRegular14: {
-    fontFamily: fonts.ManropeRegular,
+    fontFamily: fonts.InterRegular,
     fontSize: moderateScale(14),
     lineHeight: moderateScale(20),
   },
 
   interBold12: {
-    fontFamily: fonts.ManropeBold,
+    fontFamily: fonts.InterBold,
     fontSize: moderateScale(12),
     lineHeight: moderateScale(18),
   },
   interBold14: {
-    fontFamily: fonts.ManropeBold,
+    fontFamily: fonts.InterBold,
     fontSize: moderateScale(14),
     lineHeight: moderateScale(20),
   },
   interBold16: {
-    fontFamily: fonts.ManropeBold,
+    fontFamily: fonts.InterBold,
     fontSize: moderateScale(16),
     lineHeight: moderateScale(22),
   },
   interBold18: {
-    fontFamily: fonts.ManropeBold,
+    fontFamily: fonts.InterBold,
     fontSize: moderateScale(18),
     lineHeight: moderateScale(22),
   },
   interBold20: {
-    fontFamily: fonts.ManropeBold,
+    fontFamily: fonts.InterBold,
     fontSize: moderateScale(20),
     lineHeight: moderateScale(24),
   },
 
   interSemiBold11: {
-    fontFamily: fonts.ManropeSemiBold,
+    fontFamily: fonts.InterSemiBold,
     fontSize: moderateScale(11),
     lineHeight: moderateScale(16),
   },
 
   interMedium12: {
-    fontFamily: fonts.ManropeMedium,
+    fontFamily: fonts.InterMedium,
     fontSize: moderateScale(12),
     lineHeight: moderateScale(18),
   },

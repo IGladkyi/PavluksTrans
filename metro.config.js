@@ -20,7 +20,7 @@ module.exports = mergeConfig(defaultConfig, {
     alias: {
       "@": path.resolve(__dirname, "src"),
       "@components": path.resolve(__dirname, "src/components"),
-      "@features": path.resolve(__dirname, "src/features"),
+      "@screens": path.resolve(__dirname, "src/screens"),
       "@navigation": path.resolve(__dirname, "src/navigation"),
       "@store": path.resolve(__dirname, "src/store"),
       "@styles": path.resolve(__dirname, "src/styles"),

@@ -1,5 +1,5 @@
-import colors from "@/styles/colors"
-import { fontFamilies } from "@/styles/theme"
+import colors from "@styles/colors"
+import { fontFamilies } from "@styles/theme"
 import React from "react"
 import { View, Text, StyleSheet } from "react-native"
 
