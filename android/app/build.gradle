@@ -25,7 +25,7 @@ react {
 
     /* Bundling */
     //   A list containing the node command and its flags. Default is just 'node'.
-    // nodeExecutableAndArgs = ["node"]
+    nodeExecutableAndArgs = ["/Users/os/.nvm/versions/node/v20.11.0/bin/node"]
     //
     //   The command to run when bundling. By default is 'bundle'
     // bundleCommand = "ram-bundle"
@@ -53,6 +53,12 @@ react {
     /* Autolinking */
     autolinkLibrariesWithApp()
 }
+
+// Set React Native node modules directory to avoid Node.js execution
+ext.REACT_NATIVE_NODE_MODULES_DIR = file("../../node_modules")
+
+// Set React Native directory for other libraries
+ext.REACT_NATIVE_DIR = file("../../node_modules/react-native")
 
 /**
  * Set this to true to Run Proguard on Release builds to minify the Java bytecode.
@@ -103,6 +109,14 @@ android {
             signingConfig signingConfigs.debug
             minifyEnabled enableProguardInReleaseBuilds
             proguardFiles getDefaultProguardFile("proguard-android.txt"), "proguard-rules.pro"
+        }
+    }
+    
+    // Fix for AndroidX and Support library conflicts
+    configurations.all {
+        resolutionStrategy {
+            force 'androidx.core:core:1.16.0'
+            force 'androidx.core:core-ktx:1.16.0'
         }
     }
 }
