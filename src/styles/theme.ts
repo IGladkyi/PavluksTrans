@@ -51,11 +51,21 @@ export const fontFamilies = StyleSheet.create({
     fontSize: moderateScale(11),
     lineHeight: moderateScale(16),
   },
+  interSemiBold24: {
+    fontFamily: fonts.InterSemiBold,
+    fontSize: moderateScale(24),
+    lineHeight: moderateScale(28),
+  },
 
   interMedium12: {
     fontFamily: fonts.InterMedium,
     fontSize: moderateScale(12),
     lineHeight: moderateScale(18),
+  },
+  interMedium14: {
+    fontFamily: fonts.InterMedium,
+    fontSize: moderateScale(14),
+    lineHeight: moderateScale(20),
   },
 })
 
@@ -126,6 +136,9 @@ export const helpers = StyleSheet.create({
   },
   mb16: {
     marginBottom: moderateScale(16),
+  },
+  mb20: {
+    marginBottom: moderateScale(20),
   },
   mb32: {
     marginBottom: moderateScale(32),

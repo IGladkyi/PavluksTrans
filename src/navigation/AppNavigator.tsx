@@ -2,7 +2,7 @@ import React from "react"
 import { NavigationContainer } from "@react-navigation/native"
 import { createStackNavigator } from "@react-navigation/stack"
 import MainTabNavigator from "./MainTabNavigator"
-import SplashScreen from "../screens/SplashScreen"
+import SplashScreen from "../features/SplashScreen"
 import { ScreensEnum } from "../constants/ScreensEnum"
 
 export type RootStackParamList = {

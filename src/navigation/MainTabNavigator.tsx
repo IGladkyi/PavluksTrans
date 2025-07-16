@@ -2,9 +2,9 @@ import React from "react"
 import { createBottomTabNavigator } from "@react-navigation/bottom-tabs"
 import { View, StyleSheet, Text } from "react-native"
 import { fontFamilies } from "@styles/theme"
-import SearchScreen from "@screens/SearchScreen"
-import ProfileScreen from "@screens/ProfileScreen"
-import TicketsScreen from "@screens/TicketsScreen"
+import SearchScreen from "@/features/SearchScreen"
+import ProfileScreen from "@/features/ProfileScreen"
+import TicketsScreen from "@/features/TicketsScreen"
 import colors from "@styles/colors"
 import {
   BusIcon,
@@ -16,8 +16,8 @@ import {
 import { ScreensEnum } from "../constants/ScreensEnum"
 import { moderateScale } from "react-native-size-matters"
 import { isIOS } from "@utils/platformChecker"
-import MyBusScreen from "@screens/MyBusScreen"
-import ContactsScreen from "@screens/ContactsScreen"
+import MyBusScreen from "@/features/MyBusScreen"
+import ContactsScreen from "@/features/ContactsScreen"
 import { useTranslation } from "react-i18next"
 
 export type MainTabParamList = {
@@ -114,7 +114,6 @@ const MainTabNavigator = () => {
               {t(route.name)}
             </Text>
           ),
-          tabBarLabelStyle: styles.tabBarLabel,
           tabBarStyle: styles.tabBar,
           tabBarActiveTintColor: colors.mainRed,
           tabBarInactiveTintColor: colors.darkGray,
@@ -141,7 +140,7 @@ const styles = StyleSheet.create({
     borderTopWidth: 0,
     borderTopLeftRadius: moderateScale(16),
     borderTopRightRadius: moderateScale(16),
-    shadowColor: colors.dark,
+    shadowColor: colors.black,
     shadowOffset: {
       width: 0,
       height: -2,
@@ -155,6 +154,8 @@ const styles = StyleSheet.create({
     textAlign: "center",
     marginTop: moderateScale(4),
     color: colors.darkGray,
+
+    width: moderateScale(70),
   },
   iconContainer: {
     width: moderateScale(24),

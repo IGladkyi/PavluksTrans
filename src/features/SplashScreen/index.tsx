@@ -13,17 +13,34 @@ const SplashScreen: React.FC = () => {
   const navigation = useNavigation<SplashScreenNavigationProp>()
 
   useEffect(() => {
-    // Hide status bar for splash screen
-    StatusBar.setHidden(true)
+    let timer: NodeJS.Timeout | null = null
 
-    // Navigate to main screen after delay
-    const timer = setTimeout(() => {
-      StatusBar.setHidden(false)
-      navigation.navigate(ScreensEnum.MAIN)
-    }, 2500)
+    try {
+      // Hide status bar for splash screen
+      StatusBar.setHidden(true)
+
+      // Navigate to main screen after delay
+      timer = setTimeout(() => {
+        try {
+          StatusBar.setHidden(false)
+          navigation.replace(ScreensEnum.MAIN)
+        } catch (error) {
+          console.error("Navigation error:", error)
+          // Fallback navigation
+          navigation.reset({
+            index: 0,
+            routes: [{ name: ScreensEnum.MAIN }],
+          })
+        }
+      }, 1000)
+    } catch (error) {
+      console.error("SplashScreen setup error:", error)
+    }
 
     return () => {
-      clearTimeout(timer)
+      if (timer) {
+        clearTimeout(timer)
+      }
       StatusBar.setHidden(false)
     }
   }, [navigation])
@@ -42,6 +59,7 @@ const SplashScreen: React.FC = () => {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
+    backgroundColor: "#FFFFFF",
   },
   image: {
     width: "100%",

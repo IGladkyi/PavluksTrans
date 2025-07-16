@@ -1,7 +1,28 @@
 {
   "Search": "Пошук",
-  "Tickets": "Білет",
+  "Tickets": "Мої білети",
   "Contacts": "Контакти",
-  "Bus": "Автобус",
-  "Profile": "Профіль"
+  "Bus": "Мій автобус",
+  "Profile": "Профіль",
+  "promo": {
+    "promoText1": "Отримайте",
+    "promoText2": "10% кешбеку",
+    "promoText3": "від суми квитка купуючи в додатку"
+  },
+  "search tickets": "Пошук квитків",
+  "oneWay": "В одну сторону",
+  "roundTrip": "Зворотна подорож",
+  "from": "Звідки",
+  "to": "Куди",
+  "travel date": "Дата поїздки",
+  "number of people": "К-сть осіб",
+
+  "profileLanguage": {
+    "accountManagement": "Управління вашим акаунтом",
+    "language": "Мова",
+    "languageSection": "Мова / Language",
+    "ukrainian": "Українська",
+    "english": "English",
+    "russian": "Русский"
+  }
 }

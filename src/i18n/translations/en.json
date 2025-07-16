@@ -2,6 +2,27 @@
   "Search": "Search",
   "Tickets": "Tickets",
   "Contacts": "Contacts",
-  "Bus": "Bus",
-  "Profile": "Profile"
+  "Bus": "My bus",
+  "Profile": "Profile",
+  "promo": {
+    "promoText1": "Get",
+    "promoText2": "10% cashback",
+    "promoText3": "from the ticket when buying in the app"
+  },
+  "search tickets": "Search tickets",
+  "oneWay": "One way",
+  "roundTrip": "Round trip",
+  "from": "From",
+  "to": "To",
+  "travel date": "Travel date",
+  "number of people": "Number of people",
+
+  "profileLanguage": {
+    "accountManagement": "Manage your account",
+    "language": "Language",
+    "languageSection": "Language / Мова",
+    "ukrainian": "Українська",
+    "english": "English",
+    "russian": "Русский"
+  }
 }

@@ -17,7 +17,8 @@ const resources = {
 i18n.use(initReactI18next).init({
   compatibilityJSON: "v4",
   resources,
-  fallbackLng: "en",
+  fallbackLng: "uk", // Changed from "en" to "uk"
+  lng: "uk", // Set Ukrainian as default language
   interpolation: {
     escapeValue: false,
   },
