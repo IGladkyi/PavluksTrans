@@ -1,4 +1,6 @@
 export enum ScreensEnum {
+  // Splash screen
+  SPLASH = "Splash",
   // Bottom tab routes
   MAIN = "Main",
   SEARCH = "Search",
