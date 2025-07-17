@@ -6,10 +6,11 @@ import { useTranslation } from "react-i18next"
 import NotificationLogoHeader from "@/features/SearchScreen/NotificationLogoHeader"
 import ToggleButtons from "@/components/ToggleButtons"
 import colors from "@styles/colors"
-import SearchTickets from "./SearchTickets"
+import SearchTickets from "./SearchTicketsForm"
 
 const SearchScreen = () => {
   const { t } = useTranslation()
+
   const [tripType, setTripType] = useState<string>("oneWay")
 
   return (

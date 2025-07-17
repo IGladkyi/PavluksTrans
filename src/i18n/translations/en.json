@@ -10,13 +10,17 @@
     "promoText3": "from the ticket when buying in the app"
   },
   "search tickets": "Search tickets",
+  "find a ticket": "Find a ticket",
   "oneWay": "One way",
   "roundTrip": "Round trip",
   "from": "From",
   "to": "To",
   "travel date": "Travel date",
   "number of people": "Number of people",
-
+  "filters": "Filters",
+  "provider": "Provider",
+  "seats": "Seats",
+  "cashback": "Cashback",
   "profileLanguage": {
     "accountManagement": "Manage your account",
     "language": "Language",

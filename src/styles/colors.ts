@@ -1,5 +1,5 @@
 const colors = {
-  mainDark: "#22282B",
+  mainBlack: "#22282B",
 
   mainRed: "#E03B41",
   mainRedLight: "#EA373D",
@@ -16,6 +16,7 @@ const colors = {
   successGreen: "#38B905",
 
   white: "#FFF",
+  iconWhite: "#FFF5F5",
   black: "#000",
 }
 

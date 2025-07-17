@@ -10,12 +10,17 @@
     "promoText3": "від суми квитка купуючи в додатку"
   },
   "search tickets": "Пошук квитків",
+  "find a ticket": "Знайти квиток",
   "oneWay": "В одну сторону",
   "roundTrip": "Зворотна подорож",
   "from": "Звідки",
   "to": "Куди",
   "travel date": "Дата поїздки",
   "number of people": "К-сть осіб",
+  "filters": "Фільтри",
+  "provider": "Перевізник",
+  "seats": "Місць",
+  "cashback": "Кешбек",
 
   "profileLanguage": {
     "accountManagement": "Управління вашим акаунтом",

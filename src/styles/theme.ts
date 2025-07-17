@@ -9,6 +9,11 @@ export const fontFamilies = StyleSheet.create({
     fontSize: moderateScale(10),
     lineHeight: moderateScale(14),
   },
+  interRegular11: {
+    fontFamily: fonts.InterRegular,
+    fontSize: moderateScale(11),
+    lineHeight: moderateScale(16),
+  },
   interRegular12: {
     fontFamily: fonts.InterRegular,
     fontSize: moderateScale(12),

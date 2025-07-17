@@ -10,12 +10,17 @@
     "promoText3": "от суммы билета при покупке в приложении"
   },
   "search tickets": "Поиск билетов",
+  "find a ticket": "Найти билет",
   "oneWay": "В одну сторону",
   "roundTrip": "Зворотна подорож",
   "from": "Откуда",
   "to": "Куда",
   "travel date": "Дата поездки",
   "number of people": "К-во людей",
+  "filters": "Фильтры",
+  "provider": "Перевозчик",
+  "seats": "Мест",
+  "cashback": "Кешбек",
 
   "profileLanguage": {
     "accountManagement": "Управление вашим аккаунтом",

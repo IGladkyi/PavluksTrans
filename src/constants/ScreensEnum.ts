@@ -8,4 +8,6 @@ export enum ScreensEnum {
   CONTACTS = "Contacts",
   BUS = "Bus",
   PROFILE = "Profile",
+  // Search screen
+  SEARCH_TICKETS_RESULT = "SearchTicketsResult",
 }
